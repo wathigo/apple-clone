@@ -35,6 +35,7 @@ ul{
 .iPhone{
   float: left;
   height: 200px;
+  padding: 2px;
   width: 24%;
 }
 
@@ -42,7 +43,6 @@ nav ul li{
   padding: 0;
   display: flex;
   width: 100%;
-  float: left;
   align-items: center;
   justify-content: center;
   border-right: 1px solid black;
@@ -162,7 +162,8 @@ li input:focus{
 #play{
   width: 25px;
   height: 25px;
-  margin-bottom: -3px;
+  margin-bottom: -6px;
+  cursor: pointer;
 }
 
 .top-container-body .lg-font{
