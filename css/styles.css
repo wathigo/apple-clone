@@ -183,7 +183,7 @@ li input:focus{
   ul {
     display: block;
   }
-  .nav{
+  .nav{ 
     display: none;
     width: 100%;
     top: 0;
