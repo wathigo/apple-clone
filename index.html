@@ -3,13 +3,26 @@
   <head>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apple</title>
+    <script>
+      function handleClick(evt){
+          mainNav.classList.toggle('active');
+          document.getElementById('mainNav').style.display='block';
+      }
+
+    </script>
   </head>
   <body>
     <div class="container">
       <div class="top-container">
-        <nav class="nav rm-padding">
+        <span onclick="handleClick(event)" class="navbar-toggle" id="toggle">
+          <i class="fas fa-bars"></i>
+        </span>
+        <nav class="nav rm-padding" id="mainNav">
           <ul class="rm-margin rm-padding">
             <li id="apple" class="on-hover"> <img src="https://img.icons8.com/ios/50/000000/mac-os.png" alt='apple icon'> </li>
             <li class="on-hover"> <a class="style-link" href="#"> <b>Store</b> </a> </li>
@@ -19,7 +32,7 @@
             <li class="on-hover"> <a class="style-link" href="#"> <b>iPad</b> </a> </li>
             <li class="on-hover"> <a class="style-link" href="#"> <b>iTunes</b> </a> </li>
             <li class="on-hover"> <a class="style-link" href="#"> <b>Support</b> </a> </li>
-            <li> <input type="text" name="search"> 
+            <li> <input type="text" name="search">
             </li>
           </ul>
         </nav>
@@ -57,7 +70,7 @@
       </div>
 
       <div class="bottom-container">
-        <footer>
+        <footer class="footer">
           <div class="top-footer">
             <p class="fl-left mg-left" >Shop the <a class="footer-link-color un-on-hover" href="#">Apple Online Store</a> (1-800-MY-APPLE), visit an <a class="footer-link-color un-on-hover" href="#">Apple Retail Store</a> , or find a <a class="footer-link-color un-on-hover" href="#">reseller</a> .</p>
             <p class="fl-right">

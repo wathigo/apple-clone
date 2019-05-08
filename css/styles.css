@@ -18,6 +18,10 @@ body, html{
   margin: 0;
 }
 
+.navbar-toggle{
+  display: none;
+}
+
 ul{
   display: flex;
   height: 100%;
@@ -28,13 +32,8 @@ ul{
   background: url(../images/hero.jpg) 0 100% no-repeat;
 }
 
-.middle-container{
-  height: 210px;
-}
-
 .iPhone{
   float: left;
-  height: 200px;
   width: 24%;
 }
 
@@ -54,7 +53,7 @@ nav ul li{
 }
 
 nav ul li a{
-  font-size: 15px;
+  font-size: 0.8em;
 }
 
 li:last-child{
@@ -98,7 +97,6 @@ li input:focus{
        rgb(112, 112, 112) 50%
     );
   top: 80px;
-  height: 35px;
   border-radius: 7px;
   cursor: pointer;
 
@@ -116,7 +114,7 @@ li input:focus{
   text-align: center;
 }
 .top-container-body p{
-  font-size: 35px;
+  font-size: 2.1em;
 }
 
 .lg-font{
@@ -177,6 +175,68 @@ li input:focus{
   font-size: 20px;
 }
 
-.pd-top{ 
+.pd-top{
   padding-top: 20px;
+}
+
+@media only screen and (max-width: 630px){
+  ul {
+    display: block;
+  }
+  .nav{
+    display: none;
+    width: 100%;
+    top: 0;
+  }
+  .top-container-body .lg-font{
+    margin-bottom: 10px;
+  }
+  .top-container-body{
+    top: 200px;
+  }
+  .lg-font{
+    font-size: 2.5em;
+    font-weight: 100;
+  }
+  .top-container-body p{
+    font-size: 1.5em;
+  }
+  .iPhone{
+    float: none;
+    width: 100%;
+  }
+  .iPhone img{
+    width: 80%;
+    margin: 0 10% 0 10%;
+  }
+  .mg-left{
+    margin: 0;
+  }
+  .fl-left, .fl-right{
+    float: none;
+  }
+  #apple{
+    width: 10%;
+    float: left;
+    border: 0;
+  }
+  .nav ul li input{
+    width: 20%;
+    float: right;
+  }
+  .footer{
+    margin: 10px 10% 0 10%;
+  }
+  .top-footer p, .bottom-footer p{
+    width: 100%;
+  }
+  .navbar-toggle {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+    color: white;
+    font-size: 24px;
+}
 }
