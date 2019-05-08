@@ -183,7 +183,7 @@ li input:focus{
   ul {
     display: block;
   }
-  .nav{ 
+  .nav{
     display: none;
     width: 100%;
     top: 0;
@@ -236,7 +236,7 @@ li input:focus{
     top: 10px;
     right: 20px;
     cursor: pointer;
-    color: rgba(255,255,255,0.8);
+    color: white;
     font-size: 24px;
 }
 }
